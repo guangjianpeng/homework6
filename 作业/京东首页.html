@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<style type="text/css">
+			html {
+				font-size: calc(100vw/7.5);
+			}
+			
+			body {
+				margin: 0;
+			}
+			
+			.search {
+				top: 0;
+				width: 100%;
+				height: 0.88rem;
+				display: flex;
+				position: fixed;
+				z-index: 99999;
+			}
+			
+			.search.fixed {
+				background-color: #e43130;
+			}
+			
+			.search>div {
+				float: left;
+			}
+			
+			.search-form {
+				width: 5.1rem;
+				padding-top: 0.14rem;
+				box-sizing: border-box;
+			}
+			
+			.search-form input {
+				width: 100%;
+				float: left;
+				height: 0.6rem;
+				border: none;
+				border-radius: 0.3rem;
+				box-sizing: border-box;
+			}
+			
+			.menu,
+			.login {
+				width: 1.2rem;
+				height: 0.88rem;
+				text-align: center;
+				line-height: 0.88rem;
+				font-size: 0.28rem;
+				color: #FFFFFF;
+				/*background-color: blue;*/
+			}
+			
+			.swiper-container img {
+				width: 100%;
+				float: left;
+			}
+			
+			.quick-nav {
+				/*background-color: yellow;*/
+				padding-bottom: 0.2rem;
+			}
+			
+			.quick-nav ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.quick-nav ul:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.quick-nav ul li {
+				width: 20%;
+				float: left;
+				list-style: none;
+				text-align: center;
+			}
+			
+			.quick-nav ul li img {
+				width: 0.8rem;
+				height: 0.8rem;
+				padding-top: 0.2rem;
+			}
+			
+			.quick-nav ul li a {
+				display: block;
+				text-decoration: none;
+				font-size: 0.24rem;
+				color: #666;
+			}
+			
+			.quick-nav ul li a div {
+				padding-top: 0.12rem;
+			}
+			.big{
+				    position: relative;
+                    display: -webkit-box;
+                    margin: 14px 5px;
+                    color: #848689;
+			}
+			.sp{
+				margin-top: 50px;
+				position: relative;
+				width: 100%;
+			}
+			.bottom1 {
+				position: absolute;
+            	left: 10px;
+				width:40%;margin: 5px 10px;float: left;border: 1px solid red;}
+            .bottom1 img{
+            	width:100%;
+            	}
+            .bottom1 dd{
+            	font-size: 0.16rem;
+            	margin-left: 0;
+            }
+            
+            .bottom2 {
+            	position: absolute;
+            	right: 10px;
+				width:40%;margin: 5px 10px;float: left;border: 1px solid red;}
+            .bottom2 img{
+            	width:100%;
+            	}
+            .bottom2 dd{
+            	font-size: 0.16rem;
+            	margin-left: 0;
+            }
+            .big{
+            	position: relative;
+            }
+            .xian{
+            	float: left;
+            	border: 1px solid black;
+            	width: 95%;
+            	height: 1px;
+            	position: absolute;
+            	z-index: -55;
+            	margin-top: 10px;
+            	
+            }
+            .center{ 
+            	 padding: 0 10px;
+                 background-color: #f0f2f5;
+                 z-index: 10;
+                 position: absolute;
+                display: block;
+                font-size:0.25rem;
+                left: 2.5rem;
+    }
+        
+        .ft {
+        	position: relative;
+				bottom: 0;
+				width: 100%;
+				height: 0.88rem;
+				display: flex;
+				position: fixed;
+				z-index: 99999;
+				background-color: yellow;
+			}
+		.ft div{
+			    width: 20%;
+				height: 50px;
+				text-align: center;
+				line-height: 0.88rem;
+		}
+		.ft div img{
+			    width: 80%;
+				text-align: center;
+				line-height: 0.88rem;
+		}	
+		</style>
+	</head>
+
+	<body>
+
+		<div class="search">
+			<div class="menu">菜单</div>
+			<div class="search-form">
+				<input type="" name="" id="" value="" />
+			</div>
+			<div class="login">登录</div>
+		</div>
+
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/bg-01.jpg"></div>
+				<div class="swiper-slide"><img src="img/bg-02.jpg"></div>
+				<div class="swiper-slide"><img src="img/bg-03.jpg"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="quick-nav">
+
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/01.png">
+						<div>京东超市</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/02.png">
+						<div>海囤全球</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/03.png">
+						<div>京东服饰</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/04.png">
+						<div>京东生鲜</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/05.png">
+						<div>京东到家</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/06.png">
+						<div>充值缴费</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/07.png">
+						<div>9.9元拼</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/08.png">
+						<div>领券</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/09.png">
+						<div>赚钱</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/10.png">
+						<div>全部</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+         
+         <div class="big">
+         <div class="xian"></div>
+         <div class="center"><img src="img/下载.png"/>为您推荐</div>
+         </div>
+         
+         <div class="sp">
+         	<dl class="bottom1">
+				<dt><a href="#"><img src="img/5e32c1d0172c611f.jpg"></a></dt>
+				<dd>仁和闪亮洗眼液 清洗眼睛水清洁眼部护理液 舒缓眼部肌肤 眼疲劳 洗眼睛神器 内赠洗眼杯一只 通用款180ml/盒</dd>
+			    <dd style="color: red;">¥39.90</dd>
+         	</dl>
+         	<dl class="bottom2">
+				<dt><a href="#"><img src="img/99c51dd312e3e56d.jpg"></a></dt>
+				<dd>仁和闪亮洗眼液 清洗眼睛水清洁眼部护理液 舒缓眼部肌肤 眼疲劳 洗眼睛神器 内赠洗眼杯一只 通用款180ml/盒</dd>
+			    <dd style="color: red;">¥39.90</dd>
+         	</dl>
+         </div>
+         <div class="ft">
+			<div><a href="#"><img src="img/bt-01.png"/></a></div>
+			<div><a href="#"><img src="img/bt-02.png"/></a></div>
+			<div><a href="#"><img src="img/bt-03.png"/></a></div>
+			<div><a href="#"><img src="img/bt-04.png"/></a></div>
+			<div><a href="#"><img src="img/bt-05.png"/></a></div>
+		</div>
+		
+		<div style="height: 1000px;">
+		</div>
+
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+			var searchBar = document.querySelector(".search");
+
+			var swiper = new Swiper('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+
+			window.addEventListener('scroll', function() {
+				var t = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+
+				if(t > 50) {
+					searchBar.setAttribute("class", "search fixed");
+				} else {
+					searchBar.setAttribute("class", "search");
+				}
+
+			});
+		</script>
+	</body>
+
+</html>
